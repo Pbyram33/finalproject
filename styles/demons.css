@@ -1,0 +1,88 @@
+html {
+    background-color: red;
+    background-image: url(../images/demon-background2.jpg);
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    background-color: white;
+    max-width: 1000px;
+    width: 100%;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkred;
+    color: black;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 350%;
+    text-align: center;
+    word-spacing: 25%;
+    font-family: 'Princess Sofia', cursive;
+    text-shadow: 5px 5px 20px black, -5px 5px 20px gray, 5px -5px 20px silver, -5px -5px 20px whitesmoke;
+    padding-left: 1em;
+}
+
+div {
+    clear: both;
+    padding-left: .5em;
+    font-size: 105%;
+}
+div h3 {
+    padding-top: 1em;
+    font-size: 115%;
+    padding-left: .5em;
+    font-weight: bold;
+}
+
+img {
+max-width: 400px;
+width: 100%;
+margin: 5px;
+}
+.logoimage {
+    max-width: 150px;
+    width: 80%;
+    margin: .5em;
+}
+
+.leftimage {
+    float: left;
+}
+
+.rightimage {
+    float: right;
+}
+
+footer{
+    clear: both;
+    background-color: darkred;
+    color: black;
+    padding: 5px 0;
+}
+
+footer p {
+    text-align: center;
+    font-size: 100%;
+}
+
+
+@media (max-width: 767px) {
+    body {
+        flex-direction: column;
+    }
+    aside, .products {
+        flex: 1 1 100vw;
+    }
+    aside {
+        position: relative;
+    }
+}
